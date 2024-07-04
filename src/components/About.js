@@ -2,12 +2,14 @@ import React from "react";
 
 export default function About(props) {
   return (
-    <div className="accordion" id="accordionExample">
+ 
+    <div className= "accordion "  id="accordionExample">
       <div
         className="accordion-item"
         style={{
-          backgroundColor: props.mode === "light" ? "white" : "#212529fa",
-          color: props.mode === "light" ? "#212529fa" : "white",
+          background: props.mode === "light" ? "white" : "#494949",
+          color: props.mode === "light" ? "black" : "white",
+          border: props.mode === "light" ? "" : "1px solid black",
         }}
       >
         <h2 className="accordion-header">
@@ -36,7 +38,12 @@ export default function About(props) {
           </div>
         </div>
       </div>
-      <div className="accordion-item" style={{ backgroundColor: props.mode === "light" ? "white" : "#212529fa", color: props.mode === "light" ? "#212529fa" : "white" }}>
+      <div className="accordion-item"  
+      style={{
+          background: props.mode === "light" ? "white" : "#494949",
+          color: props.mode === "light" ? "black" : "white",
+          border: props.mode === "light" ? "" : "1px solid black",
+        }}>
         <h2 className="accordion-header">
           <button
             className="accordion-button collapsed"
@@ -60,7 +67,12 @@ export default function About(props) {
           </div>
         </div>
       </div>
-      <div className="accordion-item" style={{ backgroundColor: props.mode === "light" ? "white" : "#212529fa", color: props.mode === "light" ? "#212529fa" : "white" }}>
+      <div className="accordion-item" 
+       style={{
+        background: props.mode === "light" ? "white" : "#494949",
+        color: props.mode === "light" ? "black" : "white",
+        border: props.mode === "light" ? "" : "1px solid black",
+      }}>
         <h2 className="accordion-header">
           <button
             className="accordion-button collapsed"
@@ -85,5 +97,7 @@ export default function About(props) {
         </div>
       </div>
     </div>
+
+
   );
 }
